@@ -889,7 +889,7 @@ img {
   .logo{
     width: 390px;
     display: flex;
-    justify-content: center;
+    padding: 0rem 7.2rem;
   }
 
 
@@ -1058,8 +1058,10 @@ img {
 
 @media (max-width: 768px) {
 
-  .footer {
-    width: 410px;
+ .footer {
+    width: 326px;
+    
+    margin: 0rem 2.5rem;
     
     gap: 4rem;
     display: flex;
