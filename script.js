@@ -285,6 +285,7 @@ function mostrarToast(mensaje) {
     toast.classList.remove("show");
   }, 2000);
 }
+
 function enviarReclamo(e) {
   e.preventDefault(); // evita recargar
   mostrarToast("Enviando reclamo a WhatsApp 📲");
