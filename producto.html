@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outlaw Star Negro | Authentic Streetwear</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="encabezado">
+  <div class="logo">
+    <a href="index.html"><img src="img/logb.png" alt="Logo"></a>
+  </div>
+
+  <nav class="menu-navegacion">
+    <a href="index.html">Inicio</a>
+    <a href="producto.html">Producto</a>
+    <a href="carrito.html">Ir al carrito</a>
+  </nav>
+
+  <div class="iconos-sociales">
+    <a href="https://www.facebook.com/profile.php?id=61587446386537&locale=es_LA" aria-label="Enlace a Facebook"><i class="fa-brands fa-facebook"></i></a>
+    <a href="https://www.instagram.com/authentic_urbanstyle/" aria-label="Enlace a Instagram"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://www.tiktok.com/@authentic_streetwearr?is_from_webapp=1&sender_device=pc" aria-label="Enlace a TikTok"><i class="fa-brands fa-tiktok"></i></a>
+  </div>
+</header>
+
+<main class="producto-page">
+
+  <!-- MIGA DE PAN -->
+  <section class="breadcrumb">
+
+    <nav class="breadcrumb-nav">
+      <a href="index.html">Inicio /</a>
+      <a href="producto.html"> Ropa /</a>
+      <a href="producto.html"> Outlaw Star Negro</a></a>
+    </nav>
+  </section>
+
+  <!-- PRODUCTO -->
+  <section class="producto-detalle">
+
+    <!-- IMÁGENES -->
+    <div class="imagenes">
+      <img src="img/p5.jpg" class="principal">
+
+      <div class="miniaturas">
+        <img src="img/p5.jpg" onclick="cambiarImg(this)">
+        <img src="img/p3.jpg" onclick="cambiarImg(this)">
+        <img src="img/p4.jpg" onclick="cambiarImg(this)">
+        <img src="img/p2.jpg" onclick="cambiarImg(this)">
+       
+      </div>
+    </div>
+
+    <!-- INFO -->
+    <div class="info">
+
+      <h2>Outlaw Star Negro</h2>
+      <p class="sub">No todos pueden usar esto</p>
+
+      <p class="precio">S/ 30.00</p>
+
+      <!-- TALLAS -->
+       
+
+      <div class="tallas">
+        <p>Talla</p>
+        
+        <button onclick="selectTalla('M')">M</button>
+         <!-- BOTONES -->
+        <button onclick="selectTalla('L')">L</button>
+         <!-- BOTONES -->
+
+      </div>
+
+    <div>
+      <p class="stock">⚠ Stock limitado</p>
+    </div>  
+
+    
+<!-- BOTONES -->
+      <button class="btn-ir" onclick="ircar()">Ir al carrito 🛒</button>
+
+      <!-- DESCRIPCIÓN -->
+      <div class="descripcion">
+        <h3>Descripción</h3>
+        <p>
+          Diseño agresivo con estética oscura. 
+          Corte oversize real, tela resistente y presencia única.
+        </p>
+      </div>
+
+      <!-- DETALLES -->
+      <div class="detalles">
+        <h3>Detalles</h3>
+        <ul>
+          <li>Son frescos, para esta temporada</li>
+          <li>Material: 100% algodón</li>
+          <li>No destiñe</li>
+          <li>Color: Negro</li>
+          <li>Fit: Oversize </li>
+          <li>Costura: Buena calidad</li>
+          <li>Estilo: Streetwear</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer class="footer">
+
+  <div class="logof"> 
+
+    <a href="index.html"><img class="fotlogo" src="img/logb.png" alt="Logo"></a>
+
+  </div>
+
+
+  <div class="footer-container">
+    
+    <div class="footer-col">
+      <h3>La Empresa</h3>
+      <ul>
+        <li><a class="term" href="privacidad.html">Políticas de Privacidad</a></li>
+        <li><a class="term" href="terminos.html">Términos y Condiciones</a></li>
+        <li><a class="term" href="libro.html">Libro de Reclamaciones</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <div class="fotred">
+
+    <div class="iconos-sociales">
+      <a href="https://www.facebook.com/profile.php?id=61587446386537&locale=es_LA" aria-label="Enlace a Facebook"><i class="fa-brands fa-facebook"></i></a>
+      <a href="https://www.instagram.com/authentic_urbanstyle/" aria-label="Enlace a Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://www.tiktok.com/@authentic_streetwearr?is_from_webapp=1&sender_device=pc" aria-label="Enlace a TikTok"><i class="fa-brands fa-tiktok"></i></a>
+    </div>
+
+  </div>
+
+  
+
+</footer>
+
+  <div class="derechos">
+    <p>&copy; 2026 Authentic Streetwear. Todos los derechos reservados.</p>
+  </div>
+  <div id="toast" class="toast"></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
