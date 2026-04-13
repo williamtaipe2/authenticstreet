@@ -285,3 +285,27 @@ function mostrarToast(mensaje) {
     toast.classList.remove("show");
   }, 2000);
 }
+function enviarReclamo(e) {
+  e.preventDefault(); // evita recargar
+  mostrarToast("Enviando reclamo a WhatsApp 📲");
+
+  let nombre = document.getElementById("nombre").value;
+  let correo = document.getElementById("correo").value;
+  let dni = document.getElementById("dni").value;
+  let tipo = document.getElementById("tipo").value;
+  let detalle = document.getElementById("detalle").value;
+
+  let mensaje = `📋 LIBRO DE RECLAMACIONES\n\n`;
+
+  mensaje += `👤 Nombre: ${nombre}\n`;
+  mensaje += `📧 Correo: ${correo}\n`;
+  mensaje += `🆔 DNI: ${dni}\n`;
+  mensaje += `📌 Tipo: ${tipo}\n\n`;
+  mensaje += `📝 Detalle:\n${detalle}`;
+
+  let numero = "51912963421"; // CAMBIA SI QUIERES
+  let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
+
+  window.open(url, "_blank");
+  
+}
