@@ -288,7 +288,6 @@ function mostrarToast(mensaje) {
 
 function enviarReclamo(e) {
   e.preventDefault(); // evita recargar
-  mostrarToast("Enviando reclamo a WhatsApp 📲");
 
   let nombre = document.getElementById("nombre").value;
   let correo = document.getElementById("correo").value;
@@ -308,5 +307,6 @@ function enviarReclamo(e) {
   let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensaje)}`;
 
   window.open(url, "_blank");
+  mostrarToast("Enviando reclamo a WhatsApp 📲");
   
 }
