@@ -35,21 +35,25 @@
 Conforme a la normativa peruana, ponemos a disposición este canal para registrar quejas o reclamos.
 </p>
 
-<form>
+<form onsubmit="enviarReclamo(event)">
 
-<input type="text" placeholder="Nombre completo" required>
-<input type="email" placeholder="Correo electrónico" required>
-<input type="text" placeholder="DNI" required>
+  <input type="text" id="nombre" placeholder="Nombre completo" required>
+  <input type="email" id="correo" placeholder="Correo electrónico" required>
+  <input type="text" id="dni" placeholder="DNI" required>
 
-<select required>
-<option value="">Tipo</option>
-<option>Reclamo</option>
-<option>Queja</option>
-</select>
+<select id="tipo" required>
+    <option value="">Tipo</option>
+    <option>Reclamo</option>
+    <option>Queja</option>
+  </select>
 
-<textarea placeholder="Detalle del reclamo" required></textarea>
+<textarea id="detalle" placeholder="Detalle del reclamo" required></textarea>
 
 <button type="submit">Enviar</button>
+
+<p style="font-size:12px; color:#aaa;">
+Tu reclamo será atendido en un plazo máximo de 24 horas.
+</p>
 
 </form>
 
@@ -60,5 +64,7 @@ Una queja implica malestar no relacionado directamente con el producto.
 
 </main>
 
+
+<script src="script.js"></script>
 </body>
 </html>
